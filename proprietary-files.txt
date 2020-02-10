@@ -27,6 +27,7 @@ vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
+vendor/lib/libtinycompress.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
@@ -35,6 +36,7 @@ vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
+vendor/lib64/libtinycompress.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-ACDB
@@ -49,7 +51,6 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/workspaceFile.qwsp
 
 # Audio-Hardware
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msm8998.so
 vendor/lib/hw/audio.r_submix.default.so
@@ -58,7 +59,6 @@ vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msm8998.so
 vendor/lib64/hw/audio.r_submix.default.so
@@ -74,10 +74,12 @@ vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
 vendor/etc/bluetooth_audio_policy_configuration.xml
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
+vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbt-vendor.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbtnv.so
@@ -89,6 +91,9 @@ product/lib64/libaptX_encoder.so
 # CDSP
 
 # CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
 framework/cneapiclient.jar
 framework/com.quicinc.cne.api-V1.0-java.jar
 framework/com.quicinc.cne.jar
@@ -372,7 +377,6 @@ vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fpc
-vendor/bin/init.fingerprint.sh
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.fpc.rc
 vendor/firmware/fpctzappfingerprint.b00
 vendor/firmware/fpctzappfingerprint.b01
@@ -601,15 +605,6 @@ vendor/firmware/ipa_fws.b02
 vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
-
-# Kernel-Modules
-vendor/lib/modules/ftm4.ko
-vendor/lib/modules/lge_battery.ko
-vendor/lib/modules/modules.alias
-vendor/lib/modules/modules.dep
-vendor/lib/modules/sw49408.ko
-vendor/lib/modules/touch_core_base.ko
-vendor/lib/modules/wlan.ko
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -903,12 +898,6 @@ vendor/app/embms/oem/vzw/config_params.xml
 vendor/app/embms/oem/vzw/provisioning_params.xml
 vendor/app/embms/oem/vzw/verizon_config_params.txt
 -vendor/app/ModemService/ModemService.apk
-vendor/app/ModemService/oat/arm64/ModemService.odex
-vendor/app/ModemService/oat/arm64/ModemService.vdex
-vendor/app/QtiTelephonyService/oat/arm64/QtiTelephonyService.odex
-vendor/app/QtiTelephonyService/oat/arm64/QtiTelephonyService.vdex
-vendor/app/TimeService/oat/arm64/TimeService.odex
-vendor/app/TimeService/oat/arm64/TimeService.vdex
 -vendor/app/wahoo_gfxdrv/wahoo_gfxdrv.apk
 vendor/bin/athdiag
 vendor/bin/bc
@@ -977,10 +966,6 @@ vendor/etc/modem_stat.conf
 vendor/etc/perf-profile0.conf
 vendor/etc/permissions/qti-vzw-ims-internal.xml
 vendor/etc/powerhint.json
-vendor/framework/oat/arm/qti-vzw-ims-internal.odex
-vendor/framework/oat/arm/qti-vzw-ims-internal.vdex
-vendor/framework/oat/arm64/qti-vzw-ims-internal.odex
-vendor/framework/oat/arm64/qti-vzw-ims-internal.vdex
 vendor/lib/adsp_camera/libhalide_hexagon_remote_skel.so
 vendor/lib/android.hardware.audio.common-util.so
 vendor/lib/android.hardware.audio.common@5.0-util.so

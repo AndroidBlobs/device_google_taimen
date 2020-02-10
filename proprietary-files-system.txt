@@ -7,6 +7,9 @@
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
 -product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
 etc/firmware/dnd.descriptor
 etc/firmware/dnd.sound_model
 etc/firmware/music_detector.descriptor
